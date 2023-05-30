@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import { Box, Grid } from '@mui/material';
+import Feed from './Feed';
 
 
 function App() {
@@ -12,27 +13,19 @@ function App() {
       <Header />
 
 
-      <div className='app_body'>
-{/* 
-        <Box>
-          <Grid container spacing={2}>
-            <Grid item md={6}  xs={8}>
-              <Sidebar />
-            </Grid>
-            <Grid item md={6} xs={4}>
-
-            </Grid>
-            <Grid item xs={4}>
-
-            </Grid>
-          
-          </Grid>
-        </Box> */}
-
-
-        {/* feed */}
-        {/* rightSidebar */}
+      {/* <div className='app_body'>
         <Sidebar />
+        <Feed />
+      </div> */}
+      <div className='app_body'>
+        <Grid container spacing={1}>
+          <Grid item md={2} lg={2}>   
+          <Sidebar />
+          </Grid>
+          <Grid item md={6} lg={6}>
+          <Feed />
+          </Grid>
+        </Grid>
       </div>
 
 
